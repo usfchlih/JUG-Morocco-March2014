@@ -1,0 +1,566 @@
+<!--
+Author: Zakaria El Fassi <z@kelfassi.com>
+
+For JUG Morocco March event.
+Based on Google IO12HTML5 Slide Template.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>What does the Web look like in 2014</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">-->
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+  <!--This one seems to work all the time, but really small on ipad-->
+  <!--<meta name="viewport" content="initial-scale=0.4">-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" media="all" href="theme/css/default.css">
+  <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="theme/css/phone.css">
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->
+  <script data-main="js/slides" src="js/require-1.0.8.min.js"></script>
+</head>
+<body style="opacity: 0">
+
+<slides class="layout-widescreen">
+  <slide class="title-slide segue nobackground">
+    <aside class="gdbar"><img src="images/google_developers_icon_128.png"></aside>
+    <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
+    <hgroup class="auto-fadein">
+      <h1 data-config-title><!-- populated from slide_config.json --></h1>
+      <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
+      <p data-config-presenter><!-- populated from slide_config.json --></p>
+    </hgroup>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Agenda</h2>
+    </hgroup>
+    <article>
+      <ul class="build fade">
+        <li>Quick History</li>
+        <li>Layouts</li>
+        <li>UI Design</li>
+        <li>Images</li>
+        <li>Fonts &amp; Typography</li>
+        <li>Elements</li>
+        <li>Closing</li>
+      </ul>
+    </article>
+  </slide>
+
+<!-- Chapter 1 -->
+
+  <slide class="segue dark nobackground">
+    <aside class="gdbar"><img src="images/google_developers_icon_128.png"></aside>
+    <hgroup class="auto-fadein">
+      <h2>A Quick History</h2>
+      <h3>Software, interwebs, and everything else.</h3>
+    </hgroup>
+  </slide>
+
+
+  <slide>
+    <article>
+      <iframe data-src="http://www.evolutionoftheweb.com/?hl=fr"></iframe>
+    </article>
+  </slide>
+
+<!-- Chapter 2 -->
+
+  <slide class="segue dark nobackground">
+    <aside class="gdbar"><img src="images/google_developers_icon_128.png"></aside>
+    <hgroup class="auto-fadein">
+      <h2>Layouts</h2>
+      <h3>The little things that we don't notice.</h3>
+    </hgroup>
+  </slide>
+
+  <slide class="fill nobackground" style="background-image: url(http://farm4.staticflickr.com/3016/2979046798_6e21878393_o.jpg)">
+    <hgroup>
+      <h2 class="white">1- Grid Layouts</h2>
+    </hgroup>
+    <footer class="source white">http://www.flickr.com/photos/juhansonin/2979046798</footer>
+  </slide>
+
+  <slide class="nobackground">
+    <hgroup>
+      <h2>What's not a grid?</h2>
+    </hgroup>
+    <article>
+      <img src="images/not-a-grid-1.jpg" class="reflect" alt="Description" title="Description">
+      <footer class="source">MCInet.gov.ma</footer>
+    </article>
+  </slide>
+
+  <slide class="nobackground">
+    <hgroup>
+      <h2>What's not a grid?</h2>
+    </hgroup>
+    <article>
+      <img src="images/not-a-grid-2.jpg" class="reflect" alt="Description" title="Description">
+      <footer class="source">MCInet.gov.ma</footer>
+    </article>
+  </slide>
+
+  <slide class="nobackground">
+    <hgroup>
+      <h2>What's a grid?</h2>
+    </hgroup>
+    <article>
+      <img src="images/a-grid.jpg" class="reflect" width="900" alt="Description" title="Description">
+    </article>
+  </slide>
+
+  <slide class="fill nobackground" style="background-image: url(http://farm2.staticflickr.com/1121/1474412691_9daa0928bf_o_d.jpg)">
+    <hgroup>
+      <h2 class="white">Make your own grid.</h2>
+      <h3 class="white">Bootstrap.</h3>
+    </hgroup>
+    <footer class="source white">http://www.flickr.com/photos/14487597@N03/1474412691</footer>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Code time ...</h2>
+      <h3>getBootstrap.com</h3>
+    </hgroup>
+    <article class="smaller">
+      <pre class="prettyprint" data-lang="html5">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+    &lt;title&gt;Bootstrap 101&lt;/title&gt;
+
+    &lt;link href="css/bootstrap.min.css" rel="stylesheet"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello, world!&lt;/h1&gt;
+
+    &lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"&gt;&lt;/script&gt;
+    &lt;script src="js/bootstrap.min.js"&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+      <footer><a href="examples/grid/">More @ examples/grid</a></footer>
+    </article>
+  </slide>
+
+  <slide class="fill nobackground" style="background-image: url(http://farm3.staticflickr.com/2868/10529726374_dcbbe72ab0_b_d.jpg)">
+    <hgroup>
+      <h2 class="white">2- Better Landing Pages</h2>
+    </hgroup>
+    <footer class="source white">http://www.flickr.com/photos/hdworld/10529726374</footer>
+  </slide>
+
+  <slide class="nobackground">
+    <hgroup>
+      <h2>Bad/old landing ...</h2>
+    </hgroup>
+    <article>
+      <img src="http://blog.kissmetrics.com/wp-content/uploads/2010/11/chase-home-page.jpg" class="reflect" width="900" alt="Description" title="Description">
+      <footer class="source">Chase.com (early 2013)</footer>
+    </article>
+  </slide>
+
+  <slide class="nobackground">
+    <hgroup>
+      <h2>OK landing</h2>
+    </hgroup>
+    <article>
+      <img src="images/ok-landing.png" class="reflect" width="900" alt="Description" title="Description">
+      <footer class="source">Chase.com (now)</footer>
+    </article>
+  </slide>
+
+  <slide class="nobackground">
+    <hgroup>
+      <h2>Good landing</h2>
+    </hgroup>
+    <article>
+      <a href="http://www.blacktie.co/demo/marco/">http://www.blacktie.co/demo/marco/</a>
+    </article>
+  </slide>
+
+  <slide class="fill nobackground" style="background-image: url(http://farm9.staticflickr.com/8314/8027348676_64888ea3e3_b_d.jpg)">
+    <aside class="note">
+      <section>
+        <ul>
+          <li>What's a mega site?</li>
+          <li>Alternatives to a mega menu: micro-sites, no navigation, breadcrumbs.</li>
+        </ul>
+        <p><b>Remember to talk about this!</b></p>
+      </section>
+    </aside>
+    <hgroup>
+      <h2 class="red">3- Mega-navigation menus</h2>
+    </hgroup>
+    <footer class="source white">http://www.flickr.com/photos/autorenphotographie/8027348676</footer>
+  </slide>
+
+  <slide class="nobackground">
+    <hgroup>
+      <h2>Mega-site, micro-menu</h2>
+    </hgroup>
+    <article>
+      <img src="images/mega-site-micro-menu.png" class="reflect" alt="Description" title="Description">
+      <footer class="source">hespress.com</footer>
+    </article>
+  </slide>
+
+  <slide class="nobackground">
+    <hgroup>
+      <h2>Mega-site, Mega-menu</h2>
+    </hgroup>
+    <article>
+      <img src="images/mega-site-mega-menu.png" class="reflect" alt="Description" title="Description">
+      <footer class="source">Mashable.com.com</footer>
+    </article>
+  </slide>
+
+  <slide class="fill nobackground" style="background-image: url(http://farm3.staticflickr.com/2420/1582284317_d303aa93f0_b_d.jpg)">
+    <hgroup>
+      <h2 class="white">4- Less clicking, more Scrolling.</h2>
+    </hgroup>
+    <footer class="source white">http://www.flickr.com/photos/omegatron/1582284317</footer>
+  </slide>
+
+  <slide class="nobackground">
+    <hgroup>
+      <h2>More Clicking ...</h2>
+    </hgroup>
+    <article>
+      <a href="http://www.groupeaksal.com/">GroupeAksal.com</a>
+    </article>
+  </slide>
+
+  <slide class="nobackground">
+    <hgroup>
+      <h2>Less (no?) Clicking</h2>
+    </hgroup>
+    <article>
+      <a href="http://warp-x-tate.net">http://warp-x-tate.net</a>
+      <br><br>
+      <a href="http://www.folkelarm.no">http://www.folkelarm.no</a>
+    </article>
+  </slide>
+
+
+  <slide class="nobackground">
+    <hgroup>
+      <h2>How to?</h2>
+      <h3><a href="https://github.com/alvarotrigo/fullpage.js">FullPage.js</a></h3>
+    </hgroup>
+    <article class="smaller">
+      <pre class="prettyprint" data-lang="html5">
+&lt;!-- ... --&gt;
+&lt;link rel="stylesheet" type="text/css" href="jquery.fullPage.css"&gt;
+
+&lt;script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"&gt;&lt;/script&gt;    
+
+&lt;!-- This following line needed in the case of setting the plugin option `scrollOverflow` to `true` --&gt;
+&lt;script type="text/javascript" src="vendors/jquery.slimscroll.min.js"&gt;&lt;/script&gt;
+
+&lt;script type="text/javascript" src="jquery.fullPage.js"&gt;&lt;/script&gt;
+&lt;!-- ... --&gt;
+&lt;div class="section"&gt;Some section&lt;/div&gt;
+&lt;div class="section"&gt;Some section&lt;/div&gt;
+&lt;div class="section"&gt;Some section&lt;/div&gt;
+&lt;div class="section"&gt;Some section&lt;/div&gt;
+</pre>
+
+    <pre class="prettyprint" data-lang="javascript">
+$(document).ready(function() {
+  $.fn.fullpage();
+});
+    </pre>
+      <footer><a href="examples/scrolling/">More @ examples/scrolling</a></footer>
+    </article>
+  </slide>
+
+  <slide class="fill nobackground" style="background-image: url(http://farm2.staticflickr.com/1229/1359933304_b183e74c44_b.jpg)">
+    <hgroup>
+      <h2 class="white">5- Parallax</h2>
+    </hgroup>
+    <footer class="source white">http://www.flickr.com/photos/51035816082@N01/1359933304</footer>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Parallax Demos</h2>
+    </hgroup>
+    <article>
+      <a href="http://discover.store.sony.com/be-moved/">http://discover.store.sony.com/be-moved/</a>
+      <br><br>
+      <a href="http://neomam.com/interactive/13reasons/">http://neomam.com/interactive/13reasons/</a>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>How to?</h2>
+      <h3><a href="http://markdalgleish.com/projects/stellar.js/">Stellar.js</a></h3>
+    </hgroup>
+    <article>
+    <pre class="prettyprint" data-lang="javascript">
+$(window).stellar(); //$.stellar();
+// or:
+$('#main').stellar();
+    </pre>
+      <footer><a href="examples/parallax/">More @ examples/parallax</a></footer>
+    </article>
+  </slide>
+
+<!-- Chapter 3 -->
+
+  <slide class="segue dark nobackground">
+    <aside class="gdbar"><img src="images/google_developers_icon_128.png"></aside>
+    <hgroup class="auto-fadein">
+      <h2>UI Design</h2>
+      <h3>The <b>BIG</b> things that we see.</h3>
+    </hgroup>
+  </slide>
+
+  <slide class="fill nobackground" style="background-color: #c0392b;">
+    <hgroup>
+      <h2 class="white">6- Flat UIs</h2>
+    </hgroup>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>What's Flat ?</h2>
+    </hgroup>
+    <article>
+      <a href="http://www.elegantseagulls.com">http://www.elegantseagulls.com</a>
+      <br><br>
+      <a href="https://gibbon.co/">https://gibbon.co/</a>
+      <br><br>
+      <a href="http://www.winamp.com">http://www.winamp.com</a>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>How ?</h2>
+    </hgroup>
+    <article>
+      <a href="http://flatuicolors.com">FlatUIcolors.com</a>
+      <br><br>
+      <a href="http://madebyvadim.com/layrs/">http://madebyvadim.com/layrs/</a>
+    </article>
+  </slide>
+
+
+  <slide class="fill nobackground" style="background-image: url(http://farm3.staticflickr.com/2479/3679044906_72faa95b1e_b_d.jpg);">
+    <hgroup>
+      <h2 class="white">7- Skeuomorphism UIs</h2>
+      <h3 class="white">/ˈskjuːəmɔrf/</h3>
+    </hgroup>
+    <footer class="source white">http://www.flickr.com/photos/rififi_plush/3679044906</footer>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>What's Skeuomorphic?</h2>
+    </hgroup>
+    <article>
+      <a href="http://brightmedia.pl">http://brightmedia.pl</a>
+      <br><br>
+      <a href="http://www.teamfannypack.com">http://www.teamfannypack.com</a>
+      <br><br>
+      <a href="http://www.worldofmerix.com">http://www.worldofmerix.com</a>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>How to ...?</h2>
+    </hgroup>
+  </slide>
+
+<!-- Chapter 4 -->
+
+  <slide class="segue dark nobackground">
+    <aside class="gdbar"><img src="images/google_developers_icon_128.png"></aside>
+    <hgroup class="auto-fadein">
+      <h2>Images</h2>
+      <h3>The &lt;img&gt;&lt;/img&gt;s</h3>
+    </hgroup>
+  </slide>
+
+  <slide class="fill nobackground" style="background-image: url(http://farm4.staticflickr.com/3821/12099296695_efa3e8e7c2_b_d.jpg);">
+    <hgroup>
+      <h2 class="white">8- Blurred Styles</h2>
+    </hgroup>
+    <article>
+      <a class="white" href="http://www.coalesceideas.com/freebie-blurred-backgrounds-pack/">Freebie here ! &lt;&lt;</a>
+    </article>
+    <footer class="source white">http://www.flickr.com/photos/philippena/12099296695</footer>
+  </slide>
+
+  <slide class="fill nobackground" style="background-image: url(http://www.svgopen.org/2007/papers/SLOGO_Abstract/SLogo_Fig9_Goldberg_Machine.svg);">
+    <hgroup>
+      <h2 class="dark">9- SVGs</h2>
+    </hgroup>
+    <footer class="source dark"><a href="http://www.svgopen.org/2007/papers/SLOGO_Abstract/SLogo_Fig9_Goldberg_Machine.svg">http://www.svgopen.org/2007/papers/SLOGO_Abstract/SLogo_Fig9_Goldberg_Machine.svg</a></footer>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>How?</h2>
+    </hgroup>
+    <article>
+      <ul class="fade">
+        <li>Adobe Illustrator</li>
+        <li><a href="http://raphaeljs.com/">Raphael.JS</a></li>
+        <li><a href="https://github.com/mbostock/d3/wiki/Gallery">D3</a></li>
+        <li><a href="http://getbootstrap.com/components/#glyphicons">Glyohicons</a></li>
+      </ul>
+    </article>
+    <footer><a href="examples/svg">More @ examples/svg</a></footer>
+  </slide>
+
+<!-- Chapter 5 -->
+
+  <slide class="segue dark nobackground">
+    <aside class="gdbar"><img src="images/google_developers_icon_128.png"></aside>
+    <hgroup class="auto-fadein">
+      <h2>Fonts &amp; Typography</h2>
+      <h3><span style="font-samily: 'Helvetica' !important; font-weight: 200 !important;">Helvetica</span>, <span style="font-samily: 'arial'">Arial</span>, and <span style="font-family: 'Comic Sans MS';">Comic Sans MS</span>.</h3>
+    </hgroup>
+  </slide>
+
+  <slide class="fill nobackground" style="background-image: url(http://farm4.staticflickr.com/3314/3588960550_6bab25361d_o_d.jpg);">
+    <hgroup>
+      <h2 class="dark">10- Non-boring typography</h2>
+    </hgroup>
+    <footer class="source dark">http://www.flickr.com/photos/38986545@N02/3588960550</footer>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>How?</h2>
+    </hgroup>
+    <article>
+      <ul class="fade">
+        <li><a href="https://www.google.com/fonts">Google Webfonts</a></li>
+        <li><a href="http://www.fontsquirrel.com/">Font Squirrel</a></li>
+        <li><a href="https://typekit.com/">Typekit</a></li>
+        <li><a href="http://www.fonts.com/web-fonts">Fonts.com</a></li>
+      </ul>
+    </article>
+  </slide>
+
+<!-- Chapter 6 -->
+
+  <slide class="segue dark nobackground">
+    <aside class="gdbar"><img src="images/google_developers_icon_128.png"></aside>
+    <hgroup class="auto-fadein">
+      <h2>Elements</h2>
+      <h3>Beyond the simple forms.</h3>
+    </hgroup>
+  </slide>
+
+    <slide class="fill nobackground" style="background-image: url(http://farm1.staticflickr.com/104/303344704_624884320e_b_d.jpg);">
+    <hgroup>
+      <h2 class="white">11- Hero Areas</h2>
+    </hgroup>
+    <article>
+      <a href="http://getbootstrap.com/examples/theme/">Bootstrap default theme</a>
+    </article>
+    <footer class="source white">http://www.flickr.com/photos/24853832@N00/303344704</footer>
+  </slide>
+
+  <slide class="fill nobackground">
+    <hgroup>
+      <h2 class="dark">12- Expanded Search Bars</h2>
+    </hgroup>
+    <article>
+      <ul>
+        <li><a href="http://www.egrappler.com/searchMeme/index.htm">SearchMeme</a></li>
+        <li><a href="http://jevnet.de/anysearch-js-demo.html">AnySearch.JS</a></li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide class="fill nobackground">
+    <hgroup>
+      <h2 class="dark">13- Featured detail lists</h2>
+    </hgroup>
+    <article>
+      <ul>
+        <li><a href="https://blend.io/">https://blend.io/</a></li>
+        <li><a href="http://storify.com/">http://storify.com</a></li>
+        <li><a href="https://grouptalent.com/welcome/">https://grouptalent.com</a></li>
+      </ul>
+    </article>
+    <footer><a href="http://getbootstrap.com/examples/justified-nav/">How ? >> http://getbootstrap.com/examples/justified-nav/</a></footer>
+  </slide>
+
+  <slide class="fill nobackground" style="background-image: url(http://farm2.staticflickr.com/1268/4685361197_3356809663_b_d.jpg);">
+    <hgroup>
+      <h2 class="white">14- Quick user registration</h2>
+    </hgroup>
+    <footer class="source white">http://www.flickr.com/photos/cushinglibrary/4685361197</footer>
+  </slide>
+
+  <slide class="fill nobackground">
+    <hgroup>
+      <h2 class="dark">15- Large video elements</h2>
+    </hgroup>
+    <article>
+      <ul>
+        <li><a href="http://dfcb.github.io/BigVideo.js/">BigVideo.JS</a></li>
+      </ul>
+    </article>
+    <footer><a href="examples/video">More @ examples/video</a></footer>
+  </slide>
+
+<!-- Chapter 8 - Closing -->
+  <slide class="segue dark nobackground">
+    <aside class="gdbar"><img src="images/google_developers_icon_128.png"></aside>
+    <hgroup class="auto-fadein">
+      <h2>Closing</h2>
+    </hgroup>
+  </slide>
+
+<!-- Chapter 8 - Questions/END -->
+
+  <slide class="thank-you-slide segue nobackground">
+    <aside class="gdbar right"><img src="images/google_developers_icon_128.png"></aside>
+    <article class="flexbox vleft auto-fadein">
+      <h2>&lt;Thank You!&gt;</h2>
+    </article>
+    <p class="auto-fadein" data-config-contact>
+      <!-- populated from slide_config.json -->
+    </p>
+  </slide>
+
+  <slide class="backdrop"></slide>
+
+</slides>
+
+<script>
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-XXXXXXXX-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+<!--[if IE]>
+  <script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
+  <script>CFInstall.check({mode: 'overlay'});</script>
+<![endif]-->
+</body>
+</html>

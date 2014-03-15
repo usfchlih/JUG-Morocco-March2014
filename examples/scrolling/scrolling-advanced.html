@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+  <title>Advanced scrolling</title>
+
+  <link rel="stylesheet" type="text/css" href="jquery.fullPage.css">
+  <link rel="stylesheet" type="text/css" href="scrolling-advanced.css">
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>  
+
+  <script type="text/javascript" src="jquery.fullPage.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      var pepe = $.fn.fullpage({
+        slidesColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+        anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+        menu: '#menu'
+      });
+    });
+  </script>
+</head>
+<body>
+
+<ul id="menu">
+  <li data-menuanchor="firstPage"><a href="#firstPage">First slide</a></li>
+  <li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
+  <li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>
+  <li data-menuanchor="4thpage"><a href="#4thpage">Fourth slide</a></li>
+</ul>
+
+<div class="section " id="section0">
+  <h1>More Scrolling ...</h1>
+  <p>Create Beautiful Fullscreen Scrolling Websites</p>
+</div>
+<div class="section" id="section1">
+    <div class="slide">
+    <div class="intro">
+      <h1>Create Sliders</h1>
+      <p>This is cool. Right?</p>
+    </div>
+
+  </div>
+    <div class="slide">
+    <div class="intro">
+      <h1>Less Clicking!</h1>
+      <p>Easy to use. Configurable and customizable.</p>
+    </div>
+  </div>
+    <div class="slide">
+    <div class="intro">
+      <h1>Cool</h1>
+      <p>Impress everybody with a simple and modern web design!</p>
+    </div>
+  </div>
+    <div class="slide">
+    <div class="intro">
+      <h1>Compatible</h1>
+      <p>Even with IE6 ...!</p>
+    </div>
+  </div>
+</div>
+<div class="section" id="section2">
+  <div class="intro">
+    <h1>Kidding. Of course :)</h1>
+  </div>
+</div>
+<div class="section" id="section3">
+  <div class="intro">
+    <h1>Tablets and Phones too.</h1>
+  </div>
+</div>
+</body>
+</html>
